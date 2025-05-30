@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Upload and Parsing</title>
+</head>
+<body>
+    <h1>Upload a PDF</h1>
+    <form method="post" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file" accept="application/pdf" required>
+        <input type="submit" value="Upload and Process">
+    </form>
+
+    {% if message %}
+        <p><strong>{{ message }}</strong></p>
+        <p>Parsed JSON saved at: <code>{{ parsed_path }}</code></p>
+        <p>Metadata JSON saved at: <code>{{ metadata_path }}</code></p>
+    {% endif %}
+</body>
+</html>
