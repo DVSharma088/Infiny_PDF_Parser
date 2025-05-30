@@ -1,0 +1,13 @@
+pymupdf
+pdfplumber
+pdfminer.six
+layoutparser
+pytesseract
+opencv-python
+pillow
+spacy
+dateparser
+transformers
+uvicorn
+flask
+werkzeug
